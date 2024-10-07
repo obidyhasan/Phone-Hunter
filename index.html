@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phone Hunter</title>
+    <title>Hot Gadgets</title>
 
     <!-- Poppins Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,15 +38,101 @@
       };
     </script>
   </head>
-  <body>
+  <body class="font-poppins">
     <!-- Navbar section -->
-    <nav></nav>
+    <nav class="bg-white sticky top-0 z-10">
+      <section class="bg-primary-light p-5">
+        <section class="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 class="text-xl font-bold text-gray-700">Hot Gadgets</h1>
+          <button class="btn bg-primary rounded-md text-white hover:bg-primary">
+            Sign Up
+          </button>
+        </section>
+      </section>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-primary-light">
+      <section
+        class="max-w-7xl mx-auto px-5 flex flex-col items-center text-center gap-7"
+      >
+        <h2 class="sm:text-5xl text-3xl font-bold mt-12">
+          Apple Iphone 13 Pro Max
+        </h2>
+        <p class="max-w-2xl text-sm text-gray-600">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humou.
+        </p>
+        <button
+          class="btn bg-primary rounded-md text-white hover:bg-primary px-7"
+        >
+          Buy Now
+        </button>
+
+        <figure class="max-w-3xl">
+          <img
+            src="./assets/iphone.png"
+            class="w-full h-full object-contain"
+            alt=""
+          />
+        </figure>
+      </section>
+    </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main class="max-w-7xl mx-auto px-5 text-center my-20">
+      <h2 class="font-bold text-3xl">Search Your Phone</h2>
+      <div class="join mt-7 w-full sm:w-3/4 md:w-3/5">
+        <input
+          class="input w-full bg-gray-100 join-item"
+          placeholder="Search"
+        />
+        <button class="hover:bg-primary btn join-item bg-primary text-white">
+          Subscribe
+        </button>
+      </div>
+
+      <!-- Container -->
+      <section
+        class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+      >
+        <!-- Item - 1 -->
+        <div class="w-full p-5 border rounded-md space-y-4">
+          <figure class="bg-primary-light h-[300px] rounded-md">
+            <img src="" alt="" class="w-full h-full object-contain" />
+          </figure>
+          <h3 class="text-xl font-bold">Iphone 13 Pro Max</h3>
+          <p class="text-sm">
+            There are many variations of passages of available, but the majority
+            have suffered
+          </p>
+          <h3 class="text-xl font-bold">$ <span>999</span></h3>
+          <button class="hover:bg-primary btn bg-primary text-white rounded">
+            Show Details
+          </button>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="bg-primary-light">
+      <section
+        class="max-w-7xl mx-auto py-10 px-5 flex items-center justify-between flex-wrap gap-5 text-center sm:text-start"
+      >
+        <div class="sm:mx-0 mx-auto">
+          <h1 class="text-3xl font-bold text-gray-700">Hot Gadgets</h1>
+          <p class="text-sm mt-1">You can definitely work.</p>
+        </div>
+        <div class="sm:mx-0 mx-auto flex items-center gap-3 justify-end">
+          <img src="./assets/facebook.png" class="w-6 h-6" alt="" />
+          <img src="./assets/twitter.png" class="w-6 h-6" alt="" />
+          <img src="./assets/instagram.png" class="w-6 h-6" alt="" />
+          <button class="btn bg-primary rounded px-7 text-white">
+            Join Premium
+          </button>
+        </div>
+      </section>
+    </footer>
 
     <!-- Script -->
     <script src="./js/script.js"></script>
