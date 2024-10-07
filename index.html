@@ -84,34 +84,27 @@
       <h2 class="font-bold text-3xl">Search Your Phone</h2>
       <div class="join mt-7 w-full sm:w-3/4 md:w-3/5">
         <input
+          id="searchInput"
           class="input w-full bg-gray-100 join-item"
           placeholder="Search"
         />
         <button class="hover:bg-primary btn join-item bg-primary text-white">
-          Subscribe
+          Search
         </button>
       </div>
 
       <!-- Container -->
       <section
+        id="phonesContainer"
         class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+      ></section>
+      <button
+        id="showAll"
+        onclick="showAllBtn()"
+        class="btn bg-primary rounded px-7 text-white mt-10 hover:bg-primary"
       >
-        <!-- Item - 1 -->
-        <div class="w-full p-5 border rounded-md space-y-4">
-          <figure class="bg-primary-light h-[300px] rounded-md">
-            <img src="" alt="" class="w-full h-full object-contain" />
-          </figure>
-          <h3 class="text-xl font-bold">Iphone 13 Pro Max</h3>
-          <p class="text-sm">
-            There are many variations of passages of available, but the majority
-            have suffered
-          </p>
-          <h3 class="text-xl font-bold">$ <span>999</span></h3>
-          <button class="hover:bg-primary btn bg-primary text-white rounded">
-            Show Details
-          </button>
-        </div>
-      </section>
+        Show All
+      </button>
     </main>
 
     <!-- Footer Section -->
